@@ -3,11 +3,12 @@ title: Usage of Semaphore in Java
 categories: Back-End
 ---
 
-Recently I needed to prepare a presentation about Java thread at the weekly meeting. I intended to present the usage of Semaphore, which is a way of mutual exclusion to guarantee concurrency correction. In early version of JDK, the Synchronize symbol is the only way that provides data synchronization at function and block level. However, it provides a package named `java.utils,concurrent.locks` since JDK1.6, which contains seinor features for the same intention, including interrupitable at waiting and fair lock and etc. In it, `AbstractQueuedSynchronizer` provides a framework for implementing blocking locks and related synchronizers (semaphores, events, etc) that rely on first-in-first-out (FIFO) wait queues. We will see an implenment of `AbstractQueuedSynchronizer`--`Semaphore` to analysis the essentail idea of it and its usage.
+Recently I needed to prepare a presentation about Java thread at the weekly meeting. I intended to present the usage of Semaphore, which is a way of mutual exclusion to guarantee concurrency correction. In early version of JDK, the Synchronize symbol is the only way that provides data synchronization at function and block level. However, it provides a package named `java.utils,concurrent.locks` since JDK1.6, which contains senior features for the same intention, including interruptible at waiting and fair lock and etc. In it, `AbstractQueuedSynchronizer` provides a framework for implementing blocking locks and related synchronizers (semaphores, events, etc) that rely on first-in-first-out (FIFO) wait queues. We will see an implement of `AbstractQueuedSynchronizer`--`Semaphore` to analysis the essential idea of it and its usage.
 The simplest usage of `Semaphore` are:
 - acquire(): Acquires a permit from this semaphore, blocking until one is available, or the thread is interrupted.
 - release(): Releases a permit, returning it to the semaphore.
 We will mainly discuss  the two process by an example of imitating a situation of depositing into bank. Supposes there are two bank tellers in the bank, six customers want to deposit, so they need to line up.
+
 ```java
  /**
      * Bank account Entity
@@ -133,7 +134,7 @@ public final void acquireSharedInterruptibly(int arg)
             doAcquireSharedInterruptibly(arg);
     }
 ```
-The `tryAcquireShared()` is implemented in `Semaphore`,`AbstractQueuedSynchronizer` only provide interface, because the rule of an acquirement's success and failure depends on specific business. `Semaphore` defaultly uses a unfair strategy, which means it is possible for one thread to invoke acquire before another but reach the ordering point after the other. Generally, the throughput advantages of non-fair ordering often outweigh fairness considerations. The unfair way of `tryAcquireShared()` is shown below, it calculates remaining state and break if the amount of state has been drained or acquires successfully. `compareAndSetState()` in it, ancroym as `CAS`, is a common way of guarantteing a state is updated atomiclly.
+The `tryAcquireShared()` is implemented in `Semaphore`,`AbstractQueuedSynchronizer` only provide interface, because the rule of an acquirement's success and failure depends on specific business. `Semaphore` default uses a unfair strategy, which means it is possible for one thread to invoke acquire before another but reach the ordering point after the other. Generally, the throughput advantages of non-fair ordering often outweigh fairness considerations. The unfair way of `tryAcquireShared()` is shown below, it calculates remaining state and break if the amount of state has been drained or acquires successfully. `compareAndSetState()` in it, acronym as `CAS`, is a common way of guaranteeing a state is updated atomically.
 ```java
 final int nonfairTryAcquireShared(int acquires) {
             for (;;) {
@@ -145,7 +146,7 @@ final int nonfairTryAcquireShared(int acquires) {
             }
         }
 ```
-Then we analysis `doAcquireSharedInterruptibly()` , when the thread's acquirement is failed, it has to wait in a FIFO chain through `addWaiter()`. If it becomes the header in chain, trying to acquire again. If acquires successes, then sets head of queue to be the node and try to signal next queued node. If it fails, checks and updates status for a node that failed to acquire, while parks and checks interrupt at the same time. If some problem happened on the whloe process, it will cancel the node's acquire.
+Then we analysis `doAcquireSharedInterruptibly()` , when the thread's acquirement is failed, it has to wait in a FIFO chain through `addWaiter()`. If it becomes the header in chain, trying to acquire again. If acquires successes, then sets head of queue to be the node and try to signal next queued node. If it fails, checks and updates status for a node that failed to acquire, while parks and checks interrupt at the same time. If some problem happened on the whole process, it will cancel the node's acquire.
 ```
 private void doAcquireSharedInterruptibly(int arg)
         throws InterruptedException {

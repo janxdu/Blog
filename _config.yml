@@ -12,7 +12,8 @@ email: janxdu@gmail.com
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://jandu.me
+enforce_ssl: jandu.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
