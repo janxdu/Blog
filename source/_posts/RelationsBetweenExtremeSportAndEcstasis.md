@@ -1,6 +1,7 @@
 ---
 title: Relations between extreme sport and ecstasis
 categories: Journal
+date: 2017-11-04 00:00:00
 ---
 
 Extreme sport becomes more and more popular among young guys nowadays. Some people treat it as a way of livelihood, some as an exciting lifestyle. Although peril exists in extreme sport and some people pay a high price for it, it's still attractive to many people. A Chinese proverb says that "The boundless scenery is at the perilous peak" shows why people pursue the places where almost nobody can reach. Ecstasis is a psychological state where a person is fully immersed and focused on an activity or task. There may be relations between extreme sport and ecstasis.

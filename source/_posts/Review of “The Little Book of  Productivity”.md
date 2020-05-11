@@ -2,6 +2,7 @@
 title: Review of “The Little Book of  Productivity”
 categories: Book Review
 tags: [Self Improvement] 
+date: 2017-06-19 00:00:00
 ---
 It's worth taking 3.5h reading *The Little Book of  Productivity* by Scott H. Young, who finished MIT’s 4-year computer science curriculum without taking classes.
 According to this book, I analysis my strategies in two parts: the strategies I used to overlook or mistake, and the strategies I already put in practice. I will only focus on the strategies I empathized with and integrate them, because there are many good ways to lead to productivity, which depend on different conditions. I should choose a relatively good enough way and take action, and make it my best practice. These parts are also in relation to other blogs and books I've read.

@@ -1,6 +1,7 @@
 ---
 title: A new cognition of self-control
 categories: Journal
+date: 2017-11-21 00:00:00
 ---
 
 Self-control is the ability to regulate one's emotions, thoughts, and behavior in the face of temptations and impulses. As an executive function, self-control is a cognitive process that is necessary for regulating one's behavior to achieve specific goals.

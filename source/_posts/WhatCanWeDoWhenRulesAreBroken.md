@@ -1,6 +1,7 @@
 ---
 title: What can we do when rules are broken?
 categories: Journal
+date: 2017-10-28 00:00:00
 ---
 Last week I watched a film named *Million Dollar Baby*, which won the Oscar for Best  Motion Picture. It's a story about a woman named Maggie dedicated herself to practicing boxing skill, with the help of her trainer, she grew from clumsy combatant to potential champion. In the last match, because of the opponent, who fights dirty, didn't obey boxing rules and hint her three times in the face when a round ended, she injured severely and became paralyzed, with no hope of recovery. I don't aim to emphasize the enthusiasm she showed in boxing, on another hand, I saw when rules are broken, how to protect ourselves from rule - breakers.
 ![Million Dollar Baby](https://ws3.sinaimg.cn/large/006tKfTcgy1fky6qmyprlj3064091q2w.jpg)

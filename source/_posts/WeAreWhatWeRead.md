@@ -1,6 +1,7 @@
 ---
 title: We are what we read
 categories: Journal
+date: 2017-10-07 00:00:00
 ---
 
 We can learn about a person by learning about the books he reads. When I view this opinion,  an advertisement about International Literacy day occurs to my mind, which shows how people are influenced by what they read. Obviously, reading is an essential part of our lives. We read news to get what happened recently, we read reports to collaborate with colleagues, moreover , we read books to construct ourselves’s mind and explore the world.

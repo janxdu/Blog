@@ -1,6 +1,7 @@
 ---
 title: MySQL常见问题排查
 categories: DataBase
+date: 2018-04-28 00:00:00
 ---
 
 之前一直使用ORACLE的数据库，最近因项目需求需要操作MySQL，遇到了若干问题，在此记录一下。使用的虚拟机环境是CentOS release 6.2，数据库版本是5.6.16。
