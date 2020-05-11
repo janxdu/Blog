@@ -70,5 +70,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/janxdu/jandu.github.io.git
+  repository: https://github.com/janxdu/janxdu.github.io.git
   branch: master
