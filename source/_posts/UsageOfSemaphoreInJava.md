@@ -1,6 +1,7 @@
 ---
 title: Usage of Semaphore in Java
 categories: Back-End
+date: 2017-11-28 00:00:00
 ---
 
 Recently I needed to prepare a presentation about Java thread at the weekly meeting. I intended to present the usage of Semaphore, which is a way of mutual exclusion to guarantee concurrency correction. In early version of JDK, the Synchronize symbol is the only way that provides data synchronization at function and block level. However, it provides a package named `java.utils,concurrent.locks` since JDK1.6, which contains senior features for the same intention, including interruptible at waiting and fair lock and etc. In it, `AbstractQueuedSynchronizer` provides a framework for implementing blocking locks and related synchronizers (semaphores, events, etc) that rely on first-in-first-out (FIFO) wait queues. We will see an implement of `AbstractQueuedSynchronizer`--`Semaphore` to analysis the essential idea of it and its usage.

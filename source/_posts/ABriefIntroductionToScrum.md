@@ -1,6 +1,7 @@
 ---
 title: A brief introduction to Scrum
 categories: Journal
+date: 2017-11-05 00:00:00
 ---
 
 Scrum is a framework utilized to manipulate complex adaptive project, which is invented by Jeff Sutherland in 1990s. It presents a highly practical way to manage a team to achieve goals. It's easy to understand but hard to master. During the preparation of the TOEFL test, I accidentally used similar methods to boost my progress. To be more professional, I learned about some materials on Scrum, which helped me review the likelihood of achieving my goal, and made better strategies in subsequent periods.

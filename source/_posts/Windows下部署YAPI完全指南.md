@@ -1,6 +1,7 @@
 ---
 title: Windows下部署YAPI完全指南
 categories: Front End
+date: 2018-03-21 00:00:00
 ---
 
 由于React框架前后端分离的实践，需要方便地管理前后端交互的API、mock数据。根据网上开源的RAP2、YAPI、Easy Mock等项目，发现YAPI能优雅实现我们的需求。故先尝试在Windows下部署YAPI，验证功能可用性。

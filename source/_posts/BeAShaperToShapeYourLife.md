@@ -1,6 +1,7 @@
 ---
 title: Be a shaper to shape your life
 categories: Book Review
+date: 2017-10-21 00:00:00
 ---
 
 Recently a book named 'Principles: Life and Work', which is written by Bridgewater Associates's founder Ray Dalio, goes viral among Chinese folks. This book is about how he used some principles to lead himself to massive achievement, these principles are timeless and universal, giving some practical ways to manage life and work. I was obsessed by the formula he provided:

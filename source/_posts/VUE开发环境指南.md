@@ -2,6 +2,7 @@
 title: VUE开发环境指南
 categories: Front End
 tags: [VUE] 
+date: 2017-04-07 00:00:00
 ---
 ## 一、安装
 #### 使用nvm管理node版本
